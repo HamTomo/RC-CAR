@@ -1,5 +1,5 @@
 #Project files
-*.cs8
+#*.cs8
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

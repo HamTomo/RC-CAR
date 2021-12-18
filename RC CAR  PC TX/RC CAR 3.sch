@@ -1,0 +1,368 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:LED D1
+U 1 1 60C66FCA
+P 3700 2900
+F 0 "D1" H 3693 3116 50  0000 C CNN
+F 1 "LED" H 3693 3025 50  0000 C CNN
+F 2 "LED_THT:LED_D1.8mm_W3.3mm_H2.4mm" H 3700 2900 50  0001 C CNN
+F 3 "~" H 3700 2900 50  0001 C CNN
+	1    3700 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R1
+U 1 1 60C67B11
+P 4200 2900
+F 0 "R1" V 3995 2900 50  0000 C CNN
+F 1 "1k" V 4086 2900 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 4200 2900 50  0001 C CNN
+F 3 "~" H 4200 2900 50  0001 C CNN
+	1    4200 2900
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C1
+U 1 1 60C68135
+P 4600 2050
+F 0 "C1" V 4371 2050 50  0000 C CNN
+F 1 "1uF" V 4462 2050 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4600 2050 50  0001 C CNN
+F 3 "~" H 4600 2050 50  0001 C CNN
+	1    4600 2050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C3
+U 1 1 60C68525
+P 5800 2150
+F 0 "C3" H 5708 2104 50  0000 R CNN
+F 1 "1uF" H 5708 2195 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5800 2150 50  0001 C CNN
+F 3 "~" H 5800 2150 50  0001 C CNN
+	1    5800 2150
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C2
+U 1 1 60C68781
+P 6250 2150
+F 0 "C2" H 6158 2104 50  0000 R CNN
+F 1 "1uF" H 6158 2195 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6250 2150 50  0001 C CNN
+F 3 "~" H 6250 2150 50  0001 C CNN
+	1    6250 2150
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:Antenna AE1
+U 1 1 60C69163
+P 3250 2500
+F 0 "AE1" H 3330 2489 50  0000 L CNN
+F 1 "Antenna" H 3330 2398 50  0000 L CNN
+F 2 "RF_Antenna:SZJJX_CAR_TX_2.4GHz_Left" H 3250 2500 50  0001 C CNN
+F 3 "~" H 3250 2500 50  0001 C CNN
+	1    3250 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Crystal Y1
+U 1 1 60C6C05E
+P 6000 2550
+F 0 "Y1" H 6000 2818 50  0000 C CNN
+F 1 "Crystal" H 6000 2727 50  0000 C CNN
+F 2 "Crystal:Crystal_HC18-U_Vertical" H 6000 2550 50  0001 C CNN
+F 3 "~" H 6000 2550 50  0001 C CNN
+	1    6000 2550
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x07_Counter_Clockwise U1
+U 1 1 60C70A6F
+P 5000 2900
+F 0 "U1" H 5050 2400 50  0000 C CNN
+F 1 "Conn_02x07_Counter_Clockwise" H 5050 2300 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 5000 2900 50  0001 C CNN
+F 3 "~" H 5000 2900 50  0001 C CNN
+	1    5000 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 2700 3250 2700
+$Comp
+L power:GND #PWR0101
+U 1 1 60C75D5A
+P 5550 2050
+F 0 "#PWR0101" H 5550 1800 50  0001 C CNN
+F 1 "GND" H 5555 1877 50  0000 C CNN
+F 2 "" H 5550 2050 50  0001 C CNN
+F 3 "" H 5550 2050 50  0001 C CNN
+	1    5550 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 2600 5300 2600
+Wire Wire Line
+	5300 2700 6250 2700
+Wire Wire Line
+	6250 2700 6250 2550
+Wire Wire Line
+	5050 3100 5050 2800
+Connection ~ 4800 2800
+Wire Wire Line
+	4800 2800 5050 2800
+NoConn ~ 5300 3200
+NoConn ~ 4800 3000
+Wire Wire Line
+	4100 2900 3850 2900
+$Comp
+L power:GND #PWR0102
+U 1 1 60CAED1A
+P 3200 3000
+F 0 "#PWR0102" H 3200 2750 50  0001 C CNN
+F 1 "GND" H 3205 2827 50  0000 C CNN
+F 2 "" H 3200 3000 50  0001 C CNN
+F 3 "" H 3200 3000 50  0001 C CNN
+	1    3200 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 2900 3200 2900
+Wire Wire Line
+	3200 2900 3200 3000
+Wire Wire Line
+	4300 2900 4800 2900
+$Comp
+L power:GND #PWR0103
+U 1 1 60CD19C3
+P 5100 2050
+F 0 "#PWR0103" H 5100 1800 50  0001 C CNN
+F 1 "GND" H 5105 1877 50  0000 C CNN
+F 2 "" H 5100 2050 50  0001 C CNN
+F 3 "" H 5100 2050 50  0001 C CNN
+	1    5100 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 2550 6150 2550
+Wire Wire Line
+	5800 2550 5850 2550
+Wire Wire Line
+	5800 2550 5800 2600
+Wire Wire Line
+	6250 2250 6250 2550
+Connection ~ 6250 2550
+Wire Wire Line
+	5800 2250 5800 2550
+Connection ~ 5800 2550
+Wire Wire Line
+	6250 2050 6250 1900
+Wire Wire Line
+	6250 1900 5800 1900
+Wire Wire Line
+	5550 1900 5550 2050
+Wire Wire Line
+	5800 2050 5800 1900
+Connection ~ 5800 1900
+Wire Wire Line
+	5800 1900 5550 1900
+Wire Wire Line
+	5100 2050 4800 2050
+Wire Wire Line
+	4800 2050 4800 2600
+Connection ~ 4800 2050
+Wire Wire Line
+	4450 2800 4450 2050
+Wire Wire Line
+	4450 2800 4800 2800
+Wire Wire Line
+	4500 2050 4450 2050
+Wire Wire Line
+	4700 2050 4800 2050
+Wire Wire Line
+	5050 3100 5300 3100
+$Comp
+L MCU_RaspberryPi_and_Boards:Pico U3
+U 1 1 6161CA1D
+P 8200 4850
+F 0 "U3" H 8200 6065 50  0000 C CNN
+F 1 "Pico" H 8200 5974 50  0000 C CNN
+F 2 "" V 8200 4850 50  0001 C CNN
+F 3 "" H 8200 4850 50  0001 C CNN
+	1    8200 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0108
+U 1 1 61620BB6
+P 2100 5850
+F 0 "#PWR0108" H 2100 5600 50  0001 C CNN
+F 1 "GND" H 2105 5677 50  0000 C CNN
+F 2 "" H 2100 5850 50  0001 C CNN
+F 3 "" H 2100 5850 50  0001 C CNN
+	1    2100 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 5600 2100 5600
+Wire Wire Line
+	2100 5600 2100 5850
+Text Label 1950 3900 0    50   ~ 0
+FORWARD
+Text Label 1950 4000 0    50   ~ 0
+REVERSE
+Text Label 1950 4200 0    50   ~ 0
+LEFT
+Text Label 1950 4300 0    50   ~ 0
+RIGHT
+Text Notes 7850 3650 0    50   ~ 0
+ADD DECOUPLING CAPS
+Text Label 5400 2900 0    50   ~ 0
+FORWARD
+Text Label 5400 3000 0    50   ~ 0
+REVERSE
+Text Label 4600 3100 0    50   ~ 0
+LEFT
+Text Label 4650 3200 0    50   ~ 0
+RIGHT
+$Comp
+L power:+3V0 #PWR0109
+U 1 1 615DA48C
+P 6650 2800
+F 0 "#PWR0109" H 6650 2650 50  0001 C CNN
+F 1 "+3V0" H 6665 2973 50  0000 C CNN
+F 2 "" H 6650 2800 50  0001 C CNN
+F 3 "" H 6650 2800 50  0001 C CNN
+	1    6650 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 2900 5300 2900
+Wire Wire Line
+	5400 3000 5300 3000
+Wire Wire Line
+	4800 3200 4650 3200
+Wire Wire Line
+	4800 3100 4600 3100
+$Comp
+L Connector:TestPoint TP1
+U 1 1 615EA300
+P 1650 3900
+F 0 "TP1" H 1600 4100 50  0000 L CNN
+F 1 "FORWARD" H 1250 4000 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 1850 3900 50  0001 C CNN
+F 3 "~" H 1850 3900 50  0001 C CNN
+	1    1650 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP3
+U 1 1 615EB2C4
+P 1850 4000
+F 0 "TP3" H 1800 4200 50  0000 L CNN
+F 1 "REVERSE" H 1500 4050 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 2050 4000 50  0001 C CNN
+F 3 "~" H 2050 4000 50  0001 C CNN
+	1    1850 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP2
+U 1 1 615EB9D7
+P 1700 4200
+F 0 "TP2" H 1500 4350 50  0000 L CNN
+F 1 "LEFT" H 1300 4250 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 1900 4200 50  0001 C CNN
+F 3 "~" H 1900 4200 50  0001 C CNN
+	1    1700 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP4
+U 1 1 615EC7FE
+P 1850 4300
+F 0 "TP4" H 1650 4200 50  0000 L CNN
+F 1 "RIGHT" H 1800 4200 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 2050 4300 50  0001 C CNN
+F 3 "~" H 2050 4300 50  0001 C CNN
+	1    1850 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1650 3900 2400 3900
+Wire Wire Line
+	1850 4000 2400 4000
+Wire Wire Line
+	1700 4200 2400 4200
+Wire Wire Line
+	1850 4300 2400 4300
+$Comp
+L Connector_Generic:Conn_01x20 J1
+U 1 1 6161A5A4
+P 2600 4800
+F 0 "J1" H 2680 4792 50  0000 L CNN
+F 1 "Conn_01x20" H 2680 4701 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x20_P2.54mm_Vertical" H 2600 4800 50  0001 C CNN
+F 3 "~" H 2600 4800 50  0001 C CNN
+	1    2600 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x20 J3
+U 1 1 6161AD10
+P 3400 4900
+F 0 "J3" H 3318 3675 50  0000 C CNN
+F 1 "Conn_01x20" H 3318 3766 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x20_P2.54mm_Vertical" H 3400 4900 50  0001 C CNN
+F 3 "~" H 3400 4900 50  0001 C CNN
+	1    3400 4900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J2
+U 1 1 6161D7BB
+P 3050 6100
+F 0 "J2" V 3014 5912 50  0000 R CNN
+F 1 "Conn_01x03" V 2923 5912 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 3050 6100 50  0001 C CNN
+F 3 "~" H 3050 6100 50  0001 C CNN
+	1    3050 6100
+	0    -1   -1   0   
+$EndComp
+Text Label 7100 3900 0    50   ~ 0
+FORWARD
+Text Label 7100 4000 0    50   ~ 0
+REVERSE
+Text Label 7100 4200 0    50   ~ 0
+LEFT
+Text Label 7100 4300 0    50   ~ 0
+RIGHT
+Wire Wire Line
+	7500 4300 7100 4300
+Wire Wire Line
+	7500 4200 7100 4200
+Wire Wire Line
+	7500 4000 7100 4000
+Wire Wire Line
+	7500 3900 7100 3900
+Wire Wire Line
+	5050 2800 5300 2800
+Connection ~ 5050 2800
+Connection ~ 5300 2800
+Wire Wire Line
+	5300 2800 6650 2800
+$EndSCHEMATC

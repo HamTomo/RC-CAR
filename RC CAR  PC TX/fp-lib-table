@@ -1,3 +1,5 @@
 (fp_lib_table
-  (lib (name MCU_RaspberryPi_and_Boards)(type KiCad)(uri "/Users/hamishthompson/Library/Mobile Documents/com~apple~CloudDocs/Projects/RC CAR/RC CAR  PC TX/KiCadLibraries")(options "")(descr ""))
+  (lib (name "MCU_RaspberryPi_and_Boards")(type "Legacy")(uri "${KIPRJMOD}/KiCadLibraries/MCU_RaspberryPi_and_Boards.pretty")(options "")(descr "")(disabled))
+  (lib (name "RC CAR")(type "KiCad")(uri "${KIPRJMOD}/RC CAR.pretty")(options "")(descr ""))
+  (lib (name "RC_CAR_Library")(type "KiCad")(uri "${KIPRJMOD}/KiCadLibraries/RC_CAR_Library.pretty")(options "")(descr ""))
 )
